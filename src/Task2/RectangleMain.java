@@ -7,10 +7,12 @@ public class RectangleMain {
 
         if (square.isSquare()) {
             System.out.println("Rectangle sides are equal length a = " + square.getA() + " and b = " + square.getB());
+        } else {
+            System.out.println("Rectangle sides are not equal length a = " + square.getA() + " and b = " + square.getB());
         }
 
         randomRectangle.setA(5);
-        randomRectangle.setB(5);
+        randomRectangle.setB(7);
 
         System.out.println("\nThe Circumference and the area of the rectangle with sides a and b are: ");
         System.out.println("a = " + randomRectangle.getA());

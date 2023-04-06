@@ -13,12 +13,12 @@ public class Rectangle {
         return this.a;
     }
 
-    public double getB() {
-        return this.b;
-    }
-
     public void setA(final double a) {
         this.a = a;
+    }
+
+    public double getB() {
+        return this.b;
     }
 
     public void setB(final double b) {

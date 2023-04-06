@@ -21,11 +21,11 @@ public class Complex {
         return this.Imaginary;
     }
 
-    public Complex add(Complex z1) {
+    public Complex add(final Complex z1) {
         return new Complex(this.Re() + z1.Re(), this.Im() + z1.Im());
     }
 
-    public Complex subtract(Complex z1) {
+    public Complex subtract(final Complex z1) {
         return new Complex(this.Re() - z1.Re(), this.Im() - z1.Im());
     }
 
@@ -33,7 +33,13 @@ public class Complex {
         if (this.Real != 0 && this.Imaginary == 0) {
             System.out.println(this.Real);
         } else if (this.Real == 0 && this.Imaginary != 0) {
-            System.out.println(this.Im() + "i");
+            if (this.Imaginary == -1) {
+                System.out.println("-i");
+            } else if (this.Imaginary == 1) {
+                System.out.println("i");
+            } else {
+                System.out.println(this.Im() + "i");
+            }
         } else if (this.Real == 0 && this.Imaginary == 0) {
             System.out.println(0);
         } else if (this.Real != 0 && this.Imaginary != 0) {

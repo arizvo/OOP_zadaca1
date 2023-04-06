@@ -1,4 +1,4 @@
-package Task3;
+package com.aldinrizvo.qamp.oophomework1.task3;
 
 public class Complex {
     private int Real;

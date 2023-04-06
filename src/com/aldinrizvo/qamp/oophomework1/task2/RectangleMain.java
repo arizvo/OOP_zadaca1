@@ -1,4 +1,4 @@
-package Task2;
+package com.aldinrizvo.qamp.oophomework1.task2;
 
 public class RectangleMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Task1;
+package com.aldinrizvo.qamp.oophomework1.task1;
 
 public class Student {
     private String firstName;

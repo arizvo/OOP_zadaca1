@@ -8,10 +8,10 @@ public class StudentMain {
 
         System.out.println("Students data: ");
         freshmanStudent.printStudent();
-        System.out.println("");
+        System.out.println();
         seniorStudent.printStudent();
 
-        if (seniorStudent.checkIfStudentGPAIsAboveCertainValue(GPAValue)) {
+        if (seniorStudent.isGPAAboveValue(GPAValue)) {
             System.out.println("Student " + seniorStudent.getFirstName() + " " + seniorStudent.getLastName() + " has GPA greater than " + GPAValue + ".");
         } else {
             System.out.println("Student " + seniorStudent.getFirstName() + " " + seniorStudent.getLastName() + " has GPA less (or equal) than " + GPAValue + ".");
@@ -24,7 +24,7 @@ public class StudentMain {
 
         System.out.println("\nStudents data after changing informations\n");
         freshmanStudent.printStudent();
-        System.out.println("");
+        System.out.println();
         seniorStudent.printStudent();
     }
 }

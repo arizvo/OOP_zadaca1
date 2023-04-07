@@ -28,6 +28,7 @@ public class Student {
     public String getLastName() {
         return this.lastName;
     }
+
     public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
@@ -48,9 +49,10 @@ public class Student {
         this.GPA = GPA;
     }
 
-    public boolean checkIfStudentGPAIsAboveCertainValue(final double GPAValue) {
+    public boolean isGPAAboveValue(final double GPAValue) {
         return this.GPA > GPAValue;
     }
+
     public void printStudent() {
         System.out.println("Student informations: ");
         System.out.println("First name: " + this.firstName);
